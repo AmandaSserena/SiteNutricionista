@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgb(190, 246, 133), olive, hsl(128, 81%, 19%));
+}
+
+/* Estilos para o Header */
+header {
+    background-color: #ccffd2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.titulo-principal {
+    font-family: "Dancing Script", cursive;
+    text-shadow: -1px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 5px 2px 0 #000;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Estilos para a Navegação */
+nav {
+    margin: 100px auto 0;
+    /* Centraliza o nav */
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: #689F38;
+    margin-right: 450px;
+    margin-left: 450px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #93c719;
+    text-decoration: underline;
+}
+
+/* Estilos para Títulos e Parágrafos */
+h1,
+h2 {
+    font-family: "DM Serif Text", serif;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin: 50px 0 20px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 50px 0 20px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 50px 0 20px;
+}
+
+p {
+    font-family: "DM Serif Text", serif;
+    font-size: 22px;
+    background-color: #8E996F;
+    border-radius: 10px;
+    padding: 18px;
+    color: #ffffff;
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+}
+
+img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+#loadMore,
+.read-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 110px;
+    transition: background-color 0.3s, box-shadow 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+#loadMore:hover,
+.read-more:hover {
+    background-color: #218838;
+}
+
+.post img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    margin-top: 50px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    /* Escolha a cor desejada */
+}
+
+h2 a:hover {
+    color: #c75619;
+}
+
+/* Estilos para o Footer */
+footer {
+    background: #689F38;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .titulo-principal {
+        font-size: 30px;
+        margin-bottom: 20px;
+        position: static;
+        transform: none;
+    }
+
+    nav {
+        flex-direction: column;
+        margin-top: 20px;
+        width: 100%;
+        /* Largura total em telas menores */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .post img {
+        max-width: 200%;
+    }
+
+
+    p {
+        font-size: 18px;
+        /* Tamanho de fonte menor */
+        width: 90%;
+        /* Ajusta a largura */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .titulo-principal {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .post img {
+        max-width: 100%;
+
+    }
+
+
+    h2 {
+        font-size: 24px;
+        /* Ajusta o tamanho do título */
+    }
+
+    p {
+        font-size: 16px;
+        /* Tamanho de fonte menor */
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}

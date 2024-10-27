@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgb(190, 246, 133), olive, hsl(128, 81%, 19%));
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o Header */
+header {
+    background-color: #ccffd2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.titulo-principal {
+    font-family: "Dancing Script", cursive;
+    text-shadow: -1px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 5px 2px 0 #000;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav {
+    margin: 100px auto 0;
+    /* Centraliza o nav */
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: #689F38;
+    margin-right: 450px;
+    margin-left: 450px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #93c719;
+    text-decoration: underline;
+}
+
+/* Estilos para a Seção de Imagem Principal */
+.img {
+    display: block;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, rgb(190, 246, 133), olive, hsl(128, 81%, 19%));
+}
+
+.img img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    transition: background-color 0.3s, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.img img:hover {
+    background-color: #ffffff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+/* Estilos para o Texto Principal */
+.principal {
+    background: #faf9f9;
+    padding: 30px;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    text-align: left;
+}
+
+.titulo-centralizado {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Dancing Script", cursive;
+}
+
+p {
+    font-size: 17.5px;
+    line-height: 1.5;
+}
+
+#missao {
+    color: rgb(7, 113, 23);
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Estilos para Grid de Imagens */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 80%;
+    margin-bottom: 80px;
+}
+
+.image-item {
+    position: relative;
+    text-align: center;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para Botão */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    margin-left: 40%;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.button:hover,
+.whatsapp-button:hover {
+    background-color: #93c719;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Estilos específicos para o Botão do WhatsApp */
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    font-size: 18px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+
+/* Animação de Pulsar */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Estilos para o Footer */
+footer {
+    background: #689F38;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+        /* Centraliza o texto do header */
+    }
+
+    .titulo-principal {
+        font-size: 30px;
+        margin-bottom: 20px;
+        position: static;
+        transform: none;
+        text-align: center;
+        /* Centraliza o texto */
+    }
+
+    nav {
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        /* Centraliza o texto do menu */
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .img img {
+        max-width: 80%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        /* Centraliza a imagem */
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    p {
+        text-align: center;
+        /* Centraliza o texto */
+        margin-left: 0;
+        margin-right: 0;
+        width: 90%;
+        margin: 0 auto;
+        /* Centraliza o parágrafo */
+    }
+
+    ul {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        /* Centraliza os itens da lista */
+    }
+
+    .whatsapp-button {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+        text-align: center;
+        /* Centraliza o texto do header */
+    }
+
+    .titulo-principal {
+        font-size: 24px;
+        margin-bottom: 15px;
+        margin-top: 20px;
+        text-align: center;
+        /* Centraliza o texto */
+    }
+
+    nav a {
+        font-size: 16px;
+        text-align: center;
+        /* Centraliza os links do menu */
+    }
+
+    nav {
+        margin-top: 20px;
+        text-align: center;
+        /* Centraliza o menu */
+    }
+
+    .img img {
+        max-width: 100%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        /* Centraliza a imagem */
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    p {
+        font-size: 16px;
+        text-align: center;
+        /* Centraliza o texto */
+        width: 90%;
+        margin: 0 auto;
+        /* Centraliza o parágrafo */
+    }
+
+    ul {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        /* Centraliza os itens da lista */
+    }
+
+    .whatsapp-button {
+        margin-left: 0;
+    }
+
+    footer {
+        padding: 15px 0;
+        text-align: center;
+        /* Centraliza o texto do rodapé */
+    }
+}

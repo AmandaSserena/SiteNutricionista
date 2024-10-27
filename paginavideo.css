@@ -1,0 +1,195 @@
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    background-image: url('../img/frutas.avif');
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: top;
+}
+
+/* Estilos para o Header */
+header {
+    background-color: hsl(12, 98%, 75%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.titulo-principal {
+    font-family: "Dancing Script", cursive;
+    text-shadow: -1px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 5px 2px 0 #000;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Estilos para a Navegação */
+nav {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: hsl(20, 80%, 48%);
+    margin-right: 450px;
+    margin-left: 450px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e14923;
+    text-decoration: underline;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    margin: 20px auto;
+    /* Centraliza o conteúdo */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #faf9f9;
+    padding: 10px;
+    flex: 1;
+    max-width: 80%;
+    /* Ajustado para ser responsivo */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+    color: rgb(255, 85, 0);
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    margin: 10px 60px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 50px;
+}
+
+.video-container {
+    max-width: 27%;
+    margin: auto;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+footer {
+    background: hsl(20, 80%, 48%);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        width: 100%;
+        /* Largura total em telas menores */
+    }
+
+    main {
+        flex-direction: column;
+        /* Alinha o conteúdo em coluna */
+        max-width: 95%;
+        /* Largura quase total */
+        margin: 20px auto;
+        /* Centraliza */
+    }
+
+    .video-container {
+        max-width: 90%;
+        /* Ajusta a largura para telas menores */
+    }
+
+    h2 {
+        font-size: 30px;
+        /* Tamanho de fonte menor */
+    }
+
+    p {
+        margin: 10px 20px;
+        /* Margens menores */
+        font-size: 18px;
+        /* Tamanho de fonte menor */
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-principal {
+        font-size: 30px;
+        /* Tamanho de fonte menor para o título */
+    }
+
+    nav a {
+        font-size: 16px;
+        /* Tamanho de fonte menor */
+    }
+
+    h2 {
+        font-size: 24px;
+        /* Tamanho de fonte menor */
+    }
+
+    p {
+        font-size: 16px;
+        /* Tamanho de fonte menor */
+        margin: 10px 10px;
+        /* Margens ainda menores */
+    }
+
+    footer {
+        padding: 15px 0;
+        /* Menos padding */
+    }
+}

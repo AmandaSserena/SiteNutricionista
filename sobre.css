@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgb(190, 246, 133), olive, hsl(128, 81%, 19%));
+}
+
+/* Estilos para o Header */
+header {
+    background-color: #ccffd2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.titulo-principal {
+    font-family: "Dancing Script", cursive;
+    text-shadow: -1px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 5px 2px 0 #000;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Estilos para a Navegação */
+nav {
+    margin-top: 100px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: #689F38;
+    margin-right: 450px;
+    margin-left: 450px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #93c719;
+    text-decoration: underline;
+}
+
+/* Estilos para a Seção de Imagem Principal */
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(190, 246, 133), olive, hsl(128, 81%, 19%));
+    padding: 20px;
+}
+
+.img img {
+    max-width: 50%;
+    height: 100%;
+    border-radius: 10%;
+    transition: background-color 0.3s, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.img img:hover {
+    background-color: #ffffff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-family: "DM Serif Text", serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-family: "DM Serif Text", serif;
+    font-size: 22px;
+    display: flex;
+    background-color: #8E996F;
+    border-radius: 10px;
+    padding: 18px;
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.whats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+/* Aplicando a animação ao botão */
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+
+/* Estilos para o Footer */
+footer {
+    background: #689F38;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .titulo-principal {
+        font-size: 30px;
+        margin-bottom: 20px;
+        position: static;
+        transform: none;
+    }
+
+    nav {
+        flex-direction: column;
+        margin-top: 100px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .img img {
+        max-width: 80%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    ul {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .titulo-principal {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    nav {
+        margin-top: 50px;
+    }
+
+    .img {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .img img {
+        max-width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    p {
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    ul {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}

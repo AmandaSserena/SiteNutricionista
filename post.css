@@ -1,0 +1,309 @@
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    background-image: url('../img/frutas.avif');
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: top;
+}
+
+/* Estilos para o Header */
+header {
+    background-color: hsl(12, 98%, 75%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -1px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 5px 2px 0 #000;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+    color: rgb(235, 93, 5);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.titulo-principal {
+    font-family: "Dancing Script", cursive;
+    text-shadow: -1px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 5px 2px 0 #000;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Estilos para a Navegação */
+nav {
+    margin-top: 100px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: hsl(20, 80%, 48%);
+    margin-right: 450px;
+    margin-left: 450px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+nav li {
+    margin-left: 15px;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e14923;
+    text-decoration: underline;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    background: #faf9f9;
+    padding: 10px;
+    flex: 1;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+    color: rgb(255, 85, 0);
+}
+
+p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin: 10px 60px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 50px;
+}
+
+/* Estilos para o Carrossel */
+.carousel-container {
+    position: relative;
+    width: 35%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos para as setas do Carrossel */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 68, 0, 0.457);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(255, 85, 0, 0.979);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background: hsl(20, 80%, 48%);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+.whatsapp-button {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    margin-top: 50px;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .titulo-principal {
+        font-size: 40px;
+    }
+
+    main {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .carousel-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .titulo-principal {
+        font-size: 30px;
+        margin-bottom: 180px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    footer {
+        margin-top: 100px;
+        font-size: 11px;
+        justify-items: center;
+    }
+
+    nav {
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 10px 20px;
+    }
+
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .carousel-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-principal {
+        font-size: 25px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 10px 20px;
+    }
+
+    .carousel-container {
+        width: 100%;
+    }
+}
