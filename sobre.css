@@ -5,46 +5,46 @@
 }
 
 body {
-    background: linear-gradient(to right, rgb(190, 246, 133), olive, hsl(128, 81%, 19%));
+    background: #596d4a;
+    font-family: Arial, sans-serif;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.logo {
+    width: 200px;
+    /* Tamanho da logo ajustado */
+    transform: scale(1.3);
+    /* Escala sem afetar a altura da header */
+    transform-origin: center;
 }
 
 /* Estilos para o Header */
 header {
-    background-color: #ccffd2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #ffffff;
     color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
-.titulo-principal {
-    font-family: "Dancing Script", cursive;
-    text-shadow: -1px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 5px 2px 0 #000;
-    font-size: 50px;
+    padding: 8px 15px;
+    /* Reduzido para deixar o header menor */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    /* Sombra reduzida para mais leveza */
     text-align: center;
-    margin-bottom: 100px;
-    font-weight: bold;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    border-radius: 10px;
+    /* Para harmonizar com o design arredondado */
 }
 
-/* Estilos para a Navegação */
+/* Estilos para o Nav */
 nav {
-    margin-top: 100px;
-    margin-left: 40px;
     display: flex;
     justify-content: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    background: #689F38;
-    margin-right: 450px;
-    margin-left: 450px;
-    border-radius: 10px;
-    width: 100%;
-    padding: 10px 0;
+    background: #596d4a;
+    border-radius: 8px;
+    padding: 8px;
+    /* Reduzido */
+    margin-top: 10px;
 }
 
 nav ul {
@@ -53,31 +53,33 @@ nav ul {
 }
 
 nav li {
-    margin-left: 15px;
+    margin: 0 10px;
+    /* Menor espaçamento entre os itens */
 }
 
 nav a {
     text-transform: uppercase;
     color: white;
-    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    text-shadow: 0 0 3px #000;
+    /* Sombra leve para melhor contraste */
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
+    /* Fontes menores para header compacta */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #93c719;
+    color: #b5d99c;
     text-decoration: underline;
-}
-
+} 
 /* Estilos para a Seção de Imagem Principal */
 .img {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to right, rgb(190, 246, 133), olive, hsl(128, 81%, 19%));
+    background-color: #596d4a;
     padding: 20px;
 }
 
@@ -166,14 +168,12 @@ p {
     transform: scale(1.1);
 }
 
-/* Estilos para o Footer */
 footer {
-    background: #689F38;
-    color: rgb(0, 0, 0);
+    background: #3f4b30;
+    color: #ffffff;
     text-align: center;
     padding: 20px 0;
 }
-
 /* Responsividade */
 @media (max-width: 768px) {
     header {

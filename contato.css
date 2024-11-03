@@ -1,49 +1,50 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient(to right, rgb(190, 246, 133), olive, hsl(128, 81%, 19%));
+    background: #596d4a;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #ccffd2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.titulo-principal {
-    font-family: "Dancing Script", cursive;
-    text-shadow: -1px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 5px 2px 0 #000;
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 60px;
-    font-weight: bold;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* Estilos para a Navegação */
-nav {
-    margin-top: 100px;
+.logo-container {
     display: flex;
     justify-content: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    background: #689F38;
-    margin-right: 450px;
-    margin-left: 450px;
+    padding: 5px 0;
+}
+
+.logo {
+    width: 200px;
+    /* Tamanho da logo ajustado */
+    transform: scale(1.3);
+    /* Escala sem afetar a altura da header */
+    transform-origin: center;
+}
+
+/* Estilos para o Header */
+header {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 8px 15px;
+    /* Reduzido para deixar o header menor */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    /* Sombra reduzida para mais leveza */
+    text-align: center;
     border-radius: 10px;
-    width: 100%;
-    padding: 10px 0;
+    /* Para harmonizar com o design arredondado */
+}
+
+/* Estilos para o Nav */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #596d4a;
+    border-radius: 8px;
+    padding: 8px;
+    /* Reduzido */
+    margin-top: 10px;
 }
 
 nav ul {
@@ -52,26 +53,34 @@ nav ul {
 }
 
 nav li {
-    margin-left: 15px;
+    margin: 0 10px;
+    /* Menor espaçamento entre os itens */
 }
 
 nav a {
     text-transform: uppercase;
     color: white;
-    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    text-shadow: 0 0 3px #000;
+    /* Sombra leve para melhor contraste */
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
+    /* Fontes menores para header compacta */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #93c719;
+    color: #b5d99c;
     text-decoration: underline;
 }
 
 main {
     padding: 20px;
+}
+
+h2 {
+    color: #596d4a;
+    margin-bottom: 20px;
 }
 
 .contact-info {
@@ -121,7 +130,7 @@ main {
 }
 
 .contact-item a:hover {
-    color: #f50a0a;
+    color: #596d4a;
 }
 
 .social-links {
@@ -143,7 +152,7 @@ main {
 }
 
 .social-links a:hover {
-    background-color: #93c719;
+    background-color: #596d4a;
     color: #fff;
 }
 
@@ -154,15 +163,10 @@ main {
 
 
 footer {
+    background: #3f4b30;
+    color: #ffffff;
     text-align: center;
-    padding: 10px;
-    background-color: #6dbf53;
-    color: black;
-    position: relative;
-    /* Ajustado para permitir o espaçamento */
-    width: 100%;
-    margin-top: 30px;
-    /* Espaço de 50px entre o footer e a seção de contato */
+    padding: 20px 0;
 }
 
 footer p {
@@ -170,8 +174,6 @@ footer p {
     font-weight: bold;
 }
 
-
-/* Media Queries */
 @media (max-width: 600px) {
     .social-links {
         flex-direction: column;
